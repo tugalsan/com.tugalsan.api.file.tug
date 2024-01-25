@@ -13,7 +13,7 @@ public class TS_LibRepFileDocTable {
     public List<TS_LibRepFileDocRow> rows;
 
     private static int[] fillRelColSizes(int columnCount) {
-        int[] relColSizes = new int[columnCount];
+        var relColSizes = new int[columnCount];
         Arrays.fill(relColSizes, 1);
         return relColSizes;
     }
