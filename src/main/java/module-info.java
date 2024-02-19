@@ -5,6 +5,8 @@ module com.tugalsan.api.file.tug {
     requires org.apache.pdfbox; //TODO https://stackoverflow.com/questions/18189314/convert-a-pdf-file-to-image
     requires org.apache.pdfbox.io;
     requires net.sf.cssbox.pdf2dom;
+    requires com.tugalsan.api.file.common;
+    requires com.tugalsan.api.url;
     requires com.tugalsan.api.unsafe;
     requires com.tugalsan.api.runnable;
     requires com.tugalsan.api.stream;
@@ -19,6 +21,5 @@ module com.tugalsan.api.file.tug {
     requires com.tugalsan.api.file.txt;
     requires com.tugalsan.api.file.html;
     requires com.tugalsan.api.file.img;
-    exports com.tugalsan.api.file.pdf.server.itext;
-    exports com.tugalsan.api.file.pdf.server.pdfbox;
+    exports com.tugalsan.api.file.tug.server;
 }

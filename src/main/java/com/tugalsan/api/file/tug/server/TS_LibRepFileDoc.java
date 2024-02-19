@@ -1,5 +1,7 @@
 package com.tugalsan.api.file.tug.server;
 
+import com.tugalsan.api.file.common.server.TS_FileCommonBall;
+import com.tugalsan.api.file.common.server.TS_FileCommonInterface;
 import com.tugalsan.api.file.txt.server.*;
 import java.awt.image.*;
 import java.nio.file.*;
@@ -12,11 +14,11 @@ import com.tugalsan.api.url.client.*;
 import com.tugalsan.lib.domain.server.*;
 import com.tugalsan.lib.report.server.file.*;
 
-public class TS_LibRepFileDoc extends TS_LibRepFileInterface {
+public class TS_LibRepFileDoc extends TS_FileCommonInterface {
 
     final private static TS_Log d = TS_Log.of(TS_LibRepFileDoc.class);
 
-    private final TS_LibRepParser_Globals macroGlobals;
+    private final TS_FileCommonBall macroGlobals;
     public List<TS_LibRepFileDocPage> pages;
 
     public boolean isTableMode = false;
@@ -46,7 +48,7 @@ public class TS_LibRepFileDoc extends TS_LibRepFileInterface {
     }
 
     @Override
-    public final void init(TS_LibRepParser_Globals macroGlobals) {
+    public final void init(TS_FileCommonBall macroGlobals) {
         pages = TGS_ListUtils.of();
     }
 
