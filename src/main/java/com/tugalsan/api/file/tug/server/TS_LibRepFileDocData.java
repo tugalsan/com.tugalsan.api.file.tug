@@ -40,7 +40,7 @@ public class TS_LibRepFileDocData {
                 }
             } else {
                 var path = Path.of(data);
-                imageBase64 = TGS_CryptUtils.encrypt64(TS_FileTxtUtils.toString(path));
+                imageBase64 = TGS_CryptUtils.encrypt64_orEmpty(TS_FileTxtUtils.toString(path));
             }
         }
     }
