@@ -3,6 +3,7 @@ package com.tugalsan.api.file.tug.server;
 import com.tugalsan.api.crypto.client.TGS_CryptUtils;
 import com.tugalsan.api.file.txt.server.TS_FileTxtUtils;
 import com.tugalsan.api.string.client.*;
+import com.tugalsan.api.union.client.TGS_UnionExcuse;
 import com.tugalsan.api.url.client.*;
 import com.tugalsan.api.url.server.*;
 import java.nio.file.*;
@@ -33,15 +34,18 @@ public class TS_LibRepFileDocData {
 
         if (!isText_notImage) {
             var url = TGS_Url.of(data);
+            TGS_UnionExcuse<String> u_base64;
             if (TGS_UrlUtils.isValidUrl(url)) {
-                imageBase64 = TS_UrlDownloadUtils.toBase64(url);
+                u_base64 = TS_UrlDownloadUtils.toBase64(url);
                 if (imageBase64 == null) {
                     imageBase64 = "null";
                 }
             } else {
                 var path = Path.of(data);
-                imageBase64 = TGS_CryptUtils.encrypt64_orEmpty(TS_FileTxtUtils.toString(path));
+                var u_read = TS_FileTxtUtils.toString(path);
+                u_base64 = u_read.isExcuse() ? u_read.toExcuse() : TGS_CryptUtils.encrypt64(u_read.value());
             }
+            imageBase64 = u_base64.isExcuse() ? u_base64.excuse().getMessage() : u_base64.value();
         }
     }
 
