@@ -10,7 +10,6 @@ module com.tugalsan.api.file.tug {
     requires com.tugalsan.api.file.common;
     requires com.tugalsan.api.url;
     requires com.tugalsan.api.unsafe;
-    requires com.tugalsan.api.runnable;
     requires com.tugalsan.api.stream;
     requires com.tugalsan.api.coronator;
     requires com.tugalsan.api.validator;
