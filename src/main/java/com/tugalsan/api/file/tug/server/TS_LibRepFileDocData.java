@@ -48,9 +48,9 @@ public class TS_LibRepFileDocData {
     @Override
     public String toString() {
         if (isText_notImage) {
-            return TGS_StringUtils.concat(data, "\n");
+            return TGS_StringUtils.cmn().concat(data, "\n");
         } else {
-            return TGS_StringUtils.concat("<img style='display:block; width:", String.valueOf(imageWith), "px;height:", String.valueOf(imageHeight), "px;' src='data:image/jpeg;base64, ", String.valueOf(imageBase64), "' />\n");
+            return TGS_StringUtils.cmn().concat("<img style='display:block; width:", String.valueOf(imageWith), "px;height:", String.valueOf(imageHeight), "px;' src='data:image/jpeg;base64, ", String.valueOf(imageBase64), "' />\n");
         }
     }
 }
