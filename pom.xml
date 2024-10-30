@@ -6,23 +6,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        
-        <!-- https://mvnrepository.com/artifact/com.github.jai-imageio/jai-imageio-core -->
         <dependency>
             <groupId>com.github.jai-imageio</groupId>
             <artifactId>jai-imageio-core</artifactId>
             <version>1.4.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-            <version>3.0.2</version><!-- 3.0.0 -->
-        </dependency>
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox-tools</artifactId>
-            <version>3.0.2</version><!-- 3.0.0 -->
         </dependency>
         <dependency>
             <groupId>net.sf.cssbox</groupId>
@@ -47,6 +34,11 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>com.tugalsan.api.file.common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>com.tugalsan.api.file.pdf.openpdf</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
@@ -93,7 +85,7 @@
                 <version>3.13.0</version>
                 <configuration>
                     <release>23</release>
-                     <!--  <enablePreview>true</enablePreview>
+                    <!--  <enablePreview>true</enablePreview>
                     <compilerArgs>
                        <arg>- -add-modules</arg>
                         <arg>jdk.incubator.vector</arg>
