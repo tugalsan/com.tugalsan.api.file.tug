@@ -1,6 +1,5 @@
 module com.tugalsan.api.file.tug {
     requires java.desktop;
-    requires itextpdf;
     requires jai.imageio.core;
     requires org.apache.pdfbox; //TODO https://stackoverflow.com/questions/18189314/convert-a-pdf-file-to-image
     requires org.apache.pdfbox.io;
