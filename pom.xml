@@ -17,16 +17,6 @@
             <version>2.0.3</version><!-- 2.0.1 -->
         </dependency>
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-scratchpad</artifactId>
-            <version>5.1.0</version><!-- try 5.2.3-->
-        </dependency>
-        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>com.tugalsan.api.file.img</artifactId>
             <version>${project.version}</version>
@@ -65,7 +55,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.3.1</version>
                     <executions>
                         <execution>
                             <id>attach-sources</id>
