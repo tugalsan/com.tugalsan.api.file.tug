@@ -1,7 +1,7 @@
 module com.tugalsan.api.file.tug {
     requires java.desktop;
     requires jai.imageio.core;
-    requires net.sf.cssbox.pdf2dom;
+//    requires net.sf.cssbox.pdf2dom;
     requires com.tugalsan.api.crypto;
     requires com.tugalsan.api.string;
     requires com.tugalsan.api.file.common;
