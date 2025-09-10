@@ -34,7 +34,7 @@ public class TS_LibRepFileDoc { //extends TS_FileCommonInterface {
 //    @Override
 //    public String toString() {
 //        var domainCard = TS_LibDomainCardUtils.get();
-//        var browserTitle = (domainCard == null ? d.className : domainCard.firmaNameShort) + " > " + macroGlobals.funcName;
+//        var browserTitle = (domainCard == null ? d.className() : domainCard.firmaNameShort) + " > " + macroGlobals.funcName;
 //        var sb = new StringBuilder();
 //        sb.append(TGS_FileHtmlUtils.beginLines(browserTitle, true, false, 5, 5, null, true, macroGlobals.customDomain));
 //        pages.stream().forEachOrdered(page -> sb.append(page));
