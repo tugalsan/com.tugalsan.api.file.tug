@@ -1,6 +1,6 @@
 package com.tugalsan.api.file.tug.server;
 
-import com.tugalsan.api.list.client.*;
+import module com.tugalsan.api.list;
 import java.util.*;
 
 public class TS_LibRepFileDocTable {

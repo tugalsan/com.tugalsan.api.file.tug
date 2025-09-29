@@ -1,18 +1,17 @@
 package com.tugalsan.api.file.tug.server;
 
-//import com.tugalsan.api.file.common.server.TS_FileCommonBall;
-//import com.tugalsan.api.file.common.server.TS_FileCommonInterface;
-//import com.tugalsan.api.file.txt.server.*;
-//import java.awt.image.*;
+//import module com.tugalsan.api.file.common;
+//import module com.tugalsan.api.file.txt;
+//import module com.tugalsan.api.file.html;
+//import module com.tugalsan.api.log;
+//import module com.tugalsan.api.file;
+//import module com.tugalsan.api.list;
+//import module com.tugalsan.api.url;
+//import module com.tugalsan.lib.domain;
+//import module com.tugalsan.lib.report;
+//import module java.desktop;
 //import java.nio.file.*;
 //import java.util.*;
-//import com.tugalsan.api.file.html.client.*;
-//import com.tugalsan.api.log.server.*;
-//import com.tugalsan.api.file.server.*;
-//import com.tugalsan.api.list.client.*;
-//import com.tugalsan.api.url.client.*;
-//import com.tugalsan.lib.domain.server.*;
-//import com.tugalsan.lib.report.server.file.*;
 
 //TODO: This whole com.tugalsan.api.file.tug project is just in branstorming stage
 public class TS_LibRepFileDoc { //extends TS_FileCommonInterface {

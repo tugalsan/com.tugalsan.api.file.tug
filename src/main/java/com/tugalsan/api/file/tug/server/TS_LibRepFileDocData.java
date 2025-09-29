@@ -1,10 +1,9 @@
 package com.tugalsan.api.file.tug.server;
 
-import com.tugalsan.api.crypto.client.TGS_CryptUtils;
-import com.tugalsan.api.file.txt.server.TS_FileTxtUtils;
-import com.tugalsan.api.string.client.*;
-import com.tugalsan.api.url.client.*;
-import com.tugalsan.api.url.server.*;
+import module com.tugalsan.api.crypto;
+import module com.tugalsan.api.file.txt;
+import module com.tugalsan.api.string;
+import module com.tugalsan.api.url;
 import java.nio.file.*;
 
 public class TS_LibRepFileDocData {
